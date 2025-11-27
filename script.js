@@ -19,3 +19,23 @@ setTimeout((firstLog) => {
 console.log(secondlog);
 
 
+// setInterval() → bu ma’lum vaqt oralig‘ida biror funksiyani takroriy bajaradigan funksiya.
+// let count = 0;
+// let interval = setInterval(() => {
+//   count++;
+//   console.log(`Hisoblagich: ${count}`);  
+// }, 1000);
+
+// clearInterval() → bu setInterval() funksiyasini to‘xtatish uchun ishlatiladigan funksiya.
+let count = 0
+
+let interval = setInterval(() => {
+  count++
+  console.log(`Hisoblagich: ${count}`)
+
+  if (count === 5) {
+    clearInterval(interval)
+    console.log("Interval to‘xtatildi!")
+  }
+}, 1000)
+
