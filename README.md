@@ -26,7 +26,7 @@ Asinxron jarayonlarni boshqarish, kodni vaqt bo‘yicha tartiblash va intervalni
 ## 💻 Kod namunasi / Example code
 
 // Callback funksiyasi
-function greet(name, callback) {
+```function greet(name, callback) {
   console.log("Salom, " + name);
   callback();
 }
@@ -47,6 +47,7 @@ const timer = setInterval(() => {
   count++;
   if (count === 3) clearInterval(timer);
 }, 1000);
+```
 
 
 ---
